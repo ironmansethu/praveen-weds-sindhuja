@@ -61,7 +61,7 @@ const WEDDING = {
 }
 
 const COUNTDOWN_TARGET = new Date(WEDDING.countdownTarget)
-const ENVELOPE_OPEN_MS = 1600
+const ENVELOPE_OPEN_MS = 1500
 
 function useCountdown(target: Date) {
   const calc = () => {
@@ -153,7 +153,7 @@ function EnvelopeIntro({ stage, onOpen }: { stage: Stage; onOpen: () => void }) 
       >
         <span className="envelope-back" />
         <span className="envelope-letter">
-          <span className="font-script italic text-2xl">
+          <span className="font-names text-3xl">
             {WEDDING.groom} &amp; {WEDDING.bride}
           </span>
           <span className="font-serif text-xs tracking-[0.3em] uppercase mt-1">{WEDDING.dateLabel}</span>
@@ -287,9 +287,9 @@ function WeddingInvitation() {
           </p>
 
           <h1 className="font-script italic text-gold leading-tight my-4">
-            <span className="block text-7xl md:text-8xl">{WEDDING.groom}</span>
+            <span className="block font-names text-7xl md:text-8xl">{WEDDING.groom}</span>
             <span className="block font-serif not-italic text-3xl text-gold-soft my-3">&amp;</span>
-            <span className="block text-7xl md:text-8xl">{WEDDING.bride}</span>
+            <span className="block font-names text-7xl md:text-8xl">{WEDDING.bride}</span>
           </h1>
 
           <Divider icon="❧" />

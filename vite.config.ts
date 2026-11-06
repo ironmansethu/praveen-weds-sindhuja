@@ -5,16 +5,17 @@ import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import netlify from '@netlify/vite-plugin-tanstack-start'
 
-const config = defineConfig({
+const config = defineConfig(({ command }) => ({
   plugins: [
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
     }),
     tailwindcss(),
-    netlify(),
+    // Netlify plugin is only needed for deploy builds; its dev emulation requires a compatible Deno install.
+    command === 'build' && netlify(),
     tanstackStart(),
     viteReact(),
   ],
-})
+}))
 
 export default config
