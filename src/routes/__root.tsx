@@ -1,6 +1,6 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import '../styles.css'
-import ganeshaImg from '../ganesha.png'
+import muruganImg from '../muruga-icon.png'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -16,7 +16,7 @@ export const Route = createRootRoute({
       { name: 'theme-color', content: '#5b0f1a' },
     ],
     links: [
-      { rel: 'icon', href: ganeshaImg, type: 'image/png' },
+      { rel: 'icon', href: muruganImg, type: 'image/png' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
       {

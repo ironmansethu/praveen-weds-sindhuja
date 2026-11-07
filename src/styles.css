@@ -145,19 +145,19 @@ body.no-scroll {
 .hero-caps {
   margin: 0;
   font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 900;
-  font-size: clamp(2.2rem, 6.1vw, 3.7rem);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
   color: var(--ivory);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.2em;
   line-height: 1.05;
   text-transform: uppercase;
 }
 
 .hero-caps-strong {
-  margin-top: 0.35rem;
+  margin-top: 0.2rem;
   margin-bottom: 0.75rem;
   color: var(--gold-400);
-  font-size: clamp(3rem, 7.8vw, 5.3rem);
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
 }
 
 .calendar-btn {
@@ -237,11 +237,11 @@ body.no-scroll {
   color: var(--gold-500);
 }
 
-.wedding-logo {
-  width: clamp(180px, 30vw, 260px);
-  height: auto;
+.couple-portrait {
+  height: clamp(320px, 60vw, 480px);
+  width: auto;
   display: block;
-  margin: 0.75rem auto 0;
+  margin: 1rem auto 0;
   filter: drop-shadow(0 6px 12px rgba(125,84,26,0.12));
 }
 

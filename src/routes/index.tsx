@@ -356,7 +356,7 @@ function WeddingInvitation() {
             <p className="font-tamil tamil-intro-tagline">{WEDDING.tamilTagline}</p>
             <p className="font-tamil tamil-intro-names">{WEDDING.tamilNames}</p>
             <p className="font-tamil tamil-intro-date font-semibold">{WEDDING.tamilDate}</p>
-            <img src="/wedding.png" alt="Wedding emblem" className="wedding-logo" />
+            <img src="/couple-portrait.png" alt="Praveen and Sindhuja in traditional wedding attire" className="couple-portrait" />
           </div>
           <h2 className="font-script italic text-5xl text-center text-gold mb-8">Our Families</h2>
           <div className="grid md:grid-cols-2 gap-8">
